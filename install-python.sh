@@ -6,13 +6,10 @@ cd
 
 curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
 
-setting() {
-    eval $1
-    echo $1 >> ~/.bashrc
-}
-setting 'export PATH=$HOME/.pyenv/bin:$PATH'
-setting 'eval "$(pyenv init -)"'
-setting 'eval "$(pyenv virtualenv-init -)"'
+echo 'export PATH=$HOME/.pyenv/bin:$PATH' >> ~/.bashrc
+echo 'eval "$(pyenv init -)"' >> ~/.bashrc
+echo 'eval "$(pyenv virtualenv-init -)"' >> ~/.bashrc
+. ~/.bashrc
 
 pyenv install 3.6.1
 pyenv global 3.6.1
