@@ -1,11 +1,9 @@
 #/bin/sh
 set -e
+cd
 
-# 2017-05-10
 # https://aws.amazon.com/jp/premiumsupport/knowledge-center/connect-to-linux-desktop-from-windows/
 # https://github.com/neutrinolabs/xrdp/wiki/Building-on-Debian-8
-
-cd
 
 sudo apt-get update
 sudo apt-get -y upgrade

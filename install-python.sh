@@ -1,7 +1,8 @@
 #/bin/sh
 set -e
-
 cd
+
+# https://github.com/pyenv/pyenv
 
 curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
 
