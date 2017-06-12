@@ -14,6 +14,7 @@ echo 'export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH' >> ~/.bashr
 . ~/.bashrc
 
 pip install -U setuptools
+pip install cupy
 pip install chainer
 pip install matplotlib
 

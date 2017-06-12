@@ -2,6 +2,8 @@
 set -e
 cd
 
+sudo apt-get -y install git gcc make openssl libssl-dev libbz2-dev libreadline-dev libsqlite3-dev
+
 # https://github.com/pyenv/pyenv
 
 curl -L https://raw.githubusercontent.com/pyenv/pyenv-installer/master/bin/pyenv-installer | bash
