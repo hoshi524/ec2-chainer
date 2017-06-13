@@ -20,3 +20,8 @@ setting 'eval "$(pyenv virtualenv-init -)"'
 
 pyenv install anaconda3-4.4.0
 pyenv global anaconda3-4.4.0
+
+# http://jupyter.org/
+# http://qiita.com/mix_dvd/items/29dfb8d47a596b4df36d
+jupyter notebook --generate-config
+echo "c.NotebookApp.ip = '*'" >> ~/.jupyter/jupyter_notebook_config.py
